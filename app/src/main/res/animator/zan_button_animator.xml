@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially">
+    <set android:ordering="together">
+        <objectAnimator
+            android:duration="87"
+            android:propertyName="scaleX"
+            android:valueFrom="1"
+            android:valueTo="3" />
+
+        <objectAnimator
+            android:duration="87"
+            android:propertyName="scaleY"
+            android:valueFrom="1"
+            android:valueTo="3" />
+
+        <objectAnimator
+            android:duration="87"
+            android:propertyName="rotation"
+            android:valueFrom="0"
+            android:valueTo="-25"
+            android:valueType="floatType" />
+
+        <objectAnimator
+            android:duration="87"
+            android:propertyName="alpha"
+            android:valueFrom="0"
+            android:valueTo="1"
+            android:valueType="floatType" />
+
+        <objectAnimator
+            android:duration="87"
+            android:propertyName="translationX"
+            android:valueFrom="0"
+            android:valueTo="-14dp" />
+
+        <objectAnimator
+            android:duration="87"
+            android:propertyName="translationY"
+            android:valueFrom="0"
+            android:valueTo="-60dp" />
+    </set>
+
+
+    <set android:ordering="together">
+        <objectAnimator
+            android:duration="12"
+            android:propertyName="translationY"
+            android:valueFrom="-60dp"
+            android:valueTo="-62dp" />
+    </set>
+
+    <set android:ordering="together">
+        <objectAnimator
+            android:duration="75"
+            android:propertyName="rotation"
+            android:valueFrom="-25"
+            android:valueTo="0"
+            android:valueType="floatType" />
+
+        <objectAnimator
+            android:duration="75"
+            android:propertyName="scaleX"
+            android:valueFrom="3"
+            android:valueTo="2" />
+
+        <objectAnimator
+            android:duration="75"
+            android:propertyName="scaleY"
+            android:valueFrom="3"
+            android:valueTo="2" />
+
+        <objectAnimator
+            android:duration="75"
+            android:propertyName="translationX"
+            android:valueFrom="-14dp"
+            android:valueTo="-5dp" />
+
+        <objectAnimator
+            android:duration="75"
+            android:propertyName="translationY"
+            android:valueFrom="-62dp"
+            android:valueTo="-55dp" />
+    </set>
+
+    <set android:ordering="together">
+        <objectAnimator
+            android:duration="15"
+            android:propertyName="rotation"
+            android:valueFrom="0"
+            android:valueTo="10"
+            android:valueType="floatType" />
+
+        <objectAnimator
+            android:duration="15"
+            android:propertyName="scaleX"
+            android:valueFrom="2"
+            android:valueTo="1.8" />
+
+
+        <objectAnimator
+            android:duration="15"
+            android:propertyName="scaleY"
+            android:valueFrom="2"
+            android:valueTo="1.8" />
+
+    </set>
+
+    <set android:ordering="together">
+        <objectAnimator
+            android:duration="22"
+            android:propertyName="translationY"
+            android:valueFrom="-55dp"
+            android:valueTo="-50dp" />
+    </set>
+
+    <set android:ordering="together">
+        <objectAnimator
+            android:duration="97"
+            android:propertyName="rotation"
+            android:valueFrom="10"
+            android:valueTo="0" />
+
+        <objectAnimator
+            android:duration="97"
+            android:propertyName="scaleX"
+            android:valueFrom="1.8"
+            android:valueTo="2" />
+
+        <objectAnimator
+            android:duration="97"
+            android:propertyName="scaleY"
+            android:valueFrom="1.8"
+            android:valueTo="1.9" />
+
+        <objectAnimator
+            android:duration="97"
+            android:propertyName="translationY"
+            android:valueFrom="-50dp"
+            android:valueTo="-53dp"/>
+    </set>
+
+    <!--<set android:ordering="together">
+        <objectAnimator
+            android:duration="50"
+            android:propertyName="rotation"
+            android:valueFrom="5"
+            android:valueTo="0"
+            android:valueType="floatType" />
+
+        <objectAnimator
+            android:duration="50"
+            android:propertyName="scaleX"
+            android:valueFrom="2"
+            android:valueTo="2.5" />
+
+        <objectAnimator
+            android:duration="50"
+            android:propertyName="scaleY"
+            android:valueFrom="2"
+            android:valueTo="2.5" />
+
+        <objectAnimator
+            android:duration="50"
+            android:propertyName="translationY"
+            android:valueFrom="-65dp"
+            android:valueTo="-60dp" />
+
+        <objectAnimator
+            android:duration="50"
+            android:propertyName="translationX"
+            android:valueFrom="-5dp"
+            android:valueTo="-10dp" />
+    </set>-->
+
+    <set android:ordering="together">
+        <objectAnimator
+            android:duration="450"
+            android:propertyName="alpha"
+            android:valueFrom="1"
+            android:valueTo="0"
+            android:valueType="floatType" />
+    </set>
+</set>

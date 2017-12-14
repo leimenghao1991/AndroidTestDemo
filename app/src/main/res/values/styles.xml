@@ -7,5 +7,15 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    
+    <declare-styleable name="RipperView">
+        <attr name="rv_ripperCount" format="integer"/>
+        <attr name="rv_startColor" format="color|reference"/>
+        <attr name="rv_startRadius" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="TouchEventTestViewGroup">
+        <attr name="tevg_surfaceColor" format="color|reference"/>
+    </declare-styleable>
 
 </resources>
