@@ -4,11 +4,11 @@ import android.content.Context
 import android.graphics.Color
 import android.util.AttributeSet
 import android.view.MotionEvent
-import android.widget.LinearLayout
 import android.widget.RelativeLayout
-import com.example.lemon.TOUCH_EVENT_MAP
+import com.example.lemon.utils.TOUCH_EVENT_MAP
 import com.example.lemon.hellowold.R
 import com.example.lemon.hellowold.utils.LogUtil
+import com.example.lemon.utils.Loge
 
 /**
  * Created by lemon on 2017/12/14.
@@ -37,24 +37,24 @@ class TouchEventTestViewGroup : RelativeLayout {
     }
 
     override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {
-        LogUtil.e(TOUCH_EVENT_MAP.get(ev?.action))
+        Loge(TOUCH_EVENT_MAP.get(ev?.action))
         var result = super.dispatchTouchEvent(ev)
-        LogUtil.e(TOUCH_EVENT_MAP.get(ev?.action) + " " + result)
+        Loge(TOUCH_EVENT_MAP.get(ev?.action) + " " + result)
         return result
     }
 
     override fun onInterceptTouchEvent(ev: MotionEvent?): Boolean {
-        LogUtil.e(TOUCH_EVENT_MAP.get(ev?.action))
+        Loge(TOUCH_EVENT_MAP.get(ev?.action))
         var result = super.onInterceptTouchEvent(ev)
         result = ev?.action == MotionEvent.ACTION_MOVE
-        LogUtil.e(TOUCH_EVENT_MAP.get(ev?.action) + " " + result)
+        Loge(TOUCH_EVENT_MAP.get(ev?.action) + " " + result)
         return result
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
-        LogUtil.e(TOUCH_EVENT_MAP.get(event?.action))
+        Loge(TOUCH_EVENT_MAP.get(event?.action))
         var result = super.onTouchEvent(event)
-        LogUtil.e(TOUCH_EVENT_MAP.get(event?.action) + " " + true)
+        Loge(TOUCH_EVENT_MAP.get(event?.action) + " " + true)
         return true
     }
 }
