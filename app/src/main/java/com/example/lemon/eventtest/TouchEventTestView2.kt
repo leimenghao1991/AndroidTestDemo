@@ -10,19 +10,10 @@ import com.example.lemon.hellowold.utils.LogUtil
 /**
  * Created by lemon on 2017/12/14.
  */
-class TouchEventTestView : View {
+class TouchEventTestView2 : View {
+    constructor(context: Context): super(context){}
 
-    constructor(context: Context?) : super(context) {}
-
-    constructor(context: Context?, attributeSet: AttributeSet) : super(context, attributeSet) {
-        setOnTouchListener({ view: View, event: MotionEvent ->
-            LogUtil.e(TOUCH_EVENT_MAP.get(event.action))
-            var result = super.onTouchEvent(event)
-            result = event?.action == MotionEvent.ACTION_DOWN
-            LogUtil.e(TOUCH_EVENT_MAP.get(event.action) + " " + result)
-            return@setOnTouchListener result
-        })
-    }
+    constructor(context: Context, attributeSet: AttributeSet) : super(context, attributeSet) {}
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
         LogUtil.e(TOUCH_EVENT_MAP.get(event?.action))
@@ -38,6 +29,4 @@ class TouchEventTestView : View {
         LogUtil.e(TOUCH_EVENT_MAP.get(event?.action) + " " + result)
         return result
     }
-
-
 }

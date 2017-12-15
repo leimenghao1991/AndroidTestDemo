@@ -46,6 +46,7 @@ class TouchEventTestViewGroup : RelativeLayout {
     override fun onInterceptTouchEvent(ev: MotionEvent?): Boolean {
         LogUtil.e(TOUCH_EVENT_MAP.get(ev?.action))
         var result = super.onInterceptTouchEvent(ev)
+        result = ev?.action == MotionEvent.ACTION_MOVE
         LogUtil.e(TOUCH_EVENT_MAP.get(ev?.action) + " " + result)
         return result
     }
@@ -53,7 +54,7 @@ class TouchEventTestViewGroup : RelativeLayout {
     override fun onTouchEvent(event: MotionEvent?): Boolean {
         LogUtil.e(TOUCH_EVENT_MAP.get(event?.action))
         var result = super.onTouchEvent(event)
-        LogUtil.e(TOUCH_EVENT_MAP.get(event?.action) + " " + result)
-        return result
+        LogUtil.e(TOUCH_EVENT_MAP.get(event?.action) + " " + true)
+        return true
     }
 }
