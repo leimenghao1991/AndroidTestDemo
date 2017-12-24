@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/bg_short_msg_unread" />
+
+        <TextView
+            android:id="@+id/sender_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="36dp"
+            android:layout_toLeftOf="@+id/msg_receive_time_tv"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            tools:text="小明" />
+
+        <TextView
+            android:id="@+id/msg_receive_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#777777"
+            android:textSize="13sp"
+            tools:text="2017/11/29" />
+
+        <TextView
+            android:id="@+id/msg_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            tools:text="欠我的一千万什么时候换啊"
+            android:textColor="#777777"
+            android:layout_alignLeft="@id/sender_name_tv"
+            android:layout_below="@id/sender_name_tv"/>
+
+    </RelativeLayout>
+</layout>

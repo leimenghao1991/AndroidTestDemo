@@ -3,6 +3,8 @@
     package="com.example.lemon.hellowold">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
 
     <application
         android:allowBackup="true"
@@ -23,6 +25,7 @@
         <activity android:name="com.example.lemon.lifecyclertest.LifecycleTestActivity" />
         <activity android:name="com.example.lemon.EmptyFragmentTest.TestFragmentActivity2" />
         <activity android:name="com.example.lemon.EmptyFragmentTest.TestFragmentActivity$TestActivity" />
+        <activity android:name="com.example.lemon.shortmessage.ShortMessageList"></activity>
     </application>
 
 </manifest>
