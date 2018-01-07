@@ -1,4 +1,7 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 25
@@ -37,9 +40,8 @@ dependencies {
     compile 'com.skyfishjy.ripplebackground:library:1.0.1'
     compile 'android.arch.lifecycle:runtime:1.0.0-alpha1'
     compile 'android.arch.lifecycle:extensions:1.0.0-alpha1'
+    kapt "com.android.databinding:compiler:$plugin_version"
 
     testCompile 'junit:junit:4.12'
 }
 
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
